@@ -1,0 +1,30 @@
+{
+	"type": "record",
+	"name": "EhRecord",
+	"namespace": "starbucks.iot.avrospark.data",
+	"fields": [{
+		"name": "SequenceNumber",
+		"type": "long"
+	}, {
+		"name": "Offset",
+		"type": "string"
+	}, {
+		"name": "EnqueuedTimeUtc",
+		"type": "string"
+	}, {
+		"name": "SystemProperties",
+		"type": {
+			"type": "map",
+			"values": "string"
+		}
+	}, {
+		"name": "Properties",
+		"type": {
+			"type": "map",
+			"values": "string"
+		}
+	}, {
+		"name": "Body",
+		"type": "string"
+	}]
+}
